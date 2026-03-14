@@ -1,0 +1,6 @@
+{
+  "Name": "RoboInstagram",
+  "ProjectType": "Process",
+  "Description": "Automação Web e Web Scraping no Instagram",
+  "MainFile": "Main.xaml"
+}

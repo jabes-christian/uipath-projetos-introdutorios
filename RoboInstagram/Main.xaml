@@ -1,0 +1,332 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1283,4852" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="630,4829" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Int32" Default="0" Name="contador" />
+        <Variable x:TypeArguments="x:Int32" Default="0" Name="limite" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Instagram" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="596,4746" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="c3580516-c02f-4a16-8390-9271082a4510" Timeout="30" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,4552" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd2:DataTable" Name="ExtractedData" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'seguindo'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="560,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c3580516-c02f-4a16-8390-9271082a4510" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="instagram.com/monarkreal" ContentHash="E7hpsS0p80GP5oipz2yECw" DesignTimeRectangle="998, 223, 77, 18" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' seguindo' tag='SPAN' /&gt;" Guid="a822a333-c49f-4815-b8b1-c800f6a494c1" InformativeScreenshot="bded0bf11f5bcbd8c2e78003ea86f40e.jpg" Reference="LlypgTfZxUCoTGYmRunXUg/2V8DYmYSRkGrCyZxaBI_xA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="560,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                <ui:MultipleAssign.AssignOperations>
+                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Int32">[contador]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Int32">[limite]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Int32">5</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                  </scg:List>
+                </ui:MultipleAssign.AssignOperations>
+              </ui:MultipleAssign>
+              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="560,123" sap2010:WorkflowViewState.IdRef="Delay_2" />
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="560,257" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" InteractionMode="HardwareEvents" ScopeIdentifier="c3580516-c02f-4a16-8390-9271082a4510" Shortcuts="[d(hk)][k(Tab)][u(hk)]" Version="V5" />
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="560,257" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_8" InteractionMode="HardwareEvents" ScopeIdentifier="c3580516-c02f-4a16-8390-9271082a4510" Shortcuts="[d(hk)][k(Tab)][u(hk)]" Version="V5" />
+              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[contador &lt; limite]" DisplayName="While" sap:VirtualizedContainerService.HintSize="560,737" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                <ui:InterruptibleWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,606" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[contador]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[contador + 1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_9" InteractionMode="HardwareEvents" ScopeIdentifier="c3580516-c02f-4a16-8390-9271082a4510" Shortcuts="[d(hk)][k(End)][u(hk)]" Version="V5" />
+                  </Sequence>
+                </ui:InterruptibleWhile.Body>
+              </ui:InterruptibleWhile>
+              <uix:NExtractDataGeneric x:TypeArguments="sd2:DataTable" ContinueOnError="True" DisplayName="Extract Table Data 'SeguindoPesquisargcfant…'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Usuario'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Nome_Usuario'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractedData="[ExtractedData]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="560,143" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="c3580516-c02f-4a16-8390-9271082a4510" Version="V5">
+                <uix:NExtractDataGeneric.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.instagram.com/monarkreal/following/" DesignTimeRectangle="661, 325, 600, 520" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='dialog' tag='DIV' /&gt;" Guid="0d1c7bb8-589e-4a8c-a0dd-1e6e9c757257" InformativeScreenshot="16114fcfc7bb74fdece3c54e91471e11.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NExtractDataGeneric.Target>
+              </uix:NExtractDataGeneric>
+              <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="560,2601" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                <ueab:ExcelProcessScopeX.Body>
+                  <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,2531" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:ExcelApplicationCard ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="524,2471" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="seguidoresMonark_insta.xlsx">
+                        <ueab:ExcelApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,2251" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;seguidores&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="488,222" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[ExtractedData]" />
+                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractedData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="488,1969" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                                <ui:ForEachRow.Body>
+                                  <ActivityAction x:TypeArguments="sd2:DataRow">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,1796" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NGoToUrl DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="452,174" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" ScopeIdentifier="c3580516-c02f-4a16-8390-9271082a4510" Url="[CurrentRow(&quot;Url&quot;).ToString]" Version="V5" />
+                                      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                                      <If Condition="[CurrentRow(&quot;Url&quot;).ToString.Contains(&quot;https://www.instagram.com/spacetoday/&quot;)]" sap:VirtualizedContainerService.HintSize="452,1439" sap2010:WorkflowViewState.IdRef="If_1">
+                                        <If.Then>
+                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,1083" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="x:String" Name="mensagemPost">
+                                                <Variable.Default>
+                                                  <Literal x:TypeArguments="x:String">Impossível estarmos sozinhos</Literal>
+                                                </Variable.Default>
+                                              </Variable>
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DisplayName="Click 'DIV'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c3580516-c02f-4a16-8390-9271082a4510" Version="V5">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="instagram.com/spacetoday" ContentHash="1hrdpHk1LkGWF9taM_0-yw" DesignTimeRectangle="538, 570, 281, 375" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='_aagw' idx='2' tag='DIV' /&gt;" Guid="fa55b79e-5556-40f5-9c6f-8372d24e22e5" InformativeScreenshot="03c3abc9450d47f0fd50e62905b15502.jpg" Reference="LlypgTfZxUCoTGYmRunXUg/LCID69A1kEuBBam6nRr8Yg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.1" DisplayName="Click 'Curtir'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c3580516-c02f-4a16-8390-9271082a4510" Version="V5">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="instagram.com/p/DV18WQgACzb" ContentHash="lR9KCvEUlEmAxnCdKLM0Gw" DesignTimeRectangle="1159, 874, 24, 24" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Curtir' tag='svg' /&gt;" Guid="297afb23-0cab-4b1f-abba-f17331c13add" InformativeScreenshot="3051ea6f412ce575d3bec30fe51e9d53.jpg" Reference="LlypgTfZxUCoTGYmRunXUg/1BRPPqYZrUKET_IT0jL4mw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,297" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="c3580516-c02f-4a16-8390-9271082a4510" Text="[mensagemPost]" Version="V5">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="instagram.com/p/DV18WQgACzb" ContentHash="twkXU2Qiw0q_JP3SoUjcFQ" DesignTimeRectangle="1143, 970, 483, 40" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;form&amp;gt;div' tag='DIV' /&gt;" Guid="4f2b693a-26ba-4bd5-a114-bb0cb7392402" InformativeScreenshot="e5ddd76bb729219ea247caf0ae450d48.jpg" Reference="LlypgTfZxUCoTGYmRunXUg/Xz0j5xF8gkmxePAr6E5X_w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                              </uix:NTypeInto.Target>
+                                              <uix:NTypeInto.VerifyOptions>
+                                                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                    <InArgument x:TypeArguments="x:Boolean" />
+                                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                    <InArgument x:TypeArguments="x:Double" />
+                                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                </uix:VerifyExecutionTypeIntoOptions>
+                                              </uix:NTypeInto.VerifyOptions>
+                                            </uix:NTypeInto>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="0.2" DisplayName="Click 'Postar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,236" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c3580516-c02f-4a16-8390-9271082a4510" Version="V5">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="instagram.com/p/DV18WQgACzb" ContentHash="ujjk4alNwUez34ChNmFaUA" DesignTimeRectangle="1586, 980, 40, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Postar' aria-role='button' tag='DIV' /&gt;" Guid="629f315b-d690-40a9-82b3-b87a2572bebb" InformativeScreenshot="188381aad90fc815596294a836fa382a.jpg" Reference="LlypgTfZxUCoTGYmRunXUg/WrsG_KueyEmE7uWkEufhgw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[CurrentRow(&quot;Url&quot;).ToString + &quot;: Perfil comum, pulando interação&quot;]" />
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ui:ForEachRow.Body>
+                              </ui:ForEachRow>
+                            </Sequence>
+                          </ActivityAction>
+                        </ueab:ExcelApplicationCard.Body>
+                      </ueab:ExcelApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelProcessScopeX.Body>
+              </ueab:ExcelProcessScopeX>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-1928, -8, 1936, 1048" BrowserType="Chrome" ContentHash="2Ke9N0vXx0y4kUub1Q9NiA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAACtRJREFUWEell3lwVVW2xlcSZogQAgkhlxAGARsUBZxQNKhtl4BPaKRtJhmMwAMC2MxGIBAQUCiDKCrKJIMgIDKjzGOYESUMYUqQECJBhiQk5N7z/V7dnGuDVf1Xv1W16tRe69vr+9ba+5yqY3afDY4gcmCU835CpHN4UISKBldzGFrVYUTlu7wbWkBSxZtMKp/LtHJX+bj0Zb4odYkFpTJZGpLBquAM1gdnsDkog51BGeyzCxy0cxy1Mxy3tOI0+2n/aTsy8ZLtqXk/57/tX9G+nu/UpHBIlBgaKUZGiMRqYlyYl4mVC5kWmsfMir/zZfkcFpa5zLelM1ld6gI/hJxne/B59gaf50DQBY4EXeAnO88JO8dJS+eMneKsneC8HSPDDpJhu69n2OaOfyIfVbM4fli0GFFTjI4SY2uI5AgxtZpDStW7fFa5gPmhN1lW4TdWl8vixzIZ7Cp1jv0hZzkanM4vQWc4FZROuqVz3s5y0c6SaWe4ZKf51dLIsuNk2RGuWCrZtpNs+0HZtqltCXlSXWISPU7eex4xNlokR4mpNURKhMPn4V4WVC1keeXbrK90jW0Vskgtm8Gx0uc4Weo050LSyAhK43JQGtl2khw7xbUSP0mupZFrJ8i14+TaEa7bAa7bHq7bNnJtA9dtVW6mLQ6zidHO9GSPeN8jPogWH0WJWZEOcyN8LAsvYs+rd7g0u4icxYXcWHOHvC13KNxdQNGeAu7uKcC7O+Db8/Fuzce77jbeRTfwTr9G4dPpFNhh8u0AebaHPNvObfuB27aGW/YtN2xhkqXU0uEUj/jYI2bVFF9FOSyK9LE57i6/H3H4/5qO5OONPUSxbafIfqDQ1lFgK8i3xeTZvK02P9rxzveIr6PFkmiH5VFetrS4S2G23AKFIn9lPvmTrnFn5BXuDsrA1/c86nMWvZ2O4tMh/izEn4P+F2B4BiRdgm+v3VORUYga7MKxtXhtJXdtCYU2l3z77Lat84i1Hof10T42RhezJeoOeafczr2ZXi41vkR25TPcCP2ZwoqHcMrvRWV3oFLbUMhWFLwdBe0A2wm26z7fAbH74OIdV8SuXLDlyBbj2FyK7TOKLAU74PGR6ikmNbqQ/TXzOd0p393gQFazS1wNP8XNsJ8oemA/TqWdqMJmVG4TKrMBld6AQjaioB+RbYY/fHA6zM2CB3dCo+3guNOk5UawOchm4dhHFNtU7Gx0AWc8eZzy3ORUdC7Xvywowd5ZdYuciBPcrH6YovA9OFW2oAc2oEqrUYXvULnvUMxGqLERhaxFQevB1kOTXS6Z32ZfLOmazVfdddIRsE/ApiObjNcmYDmeXK54crjsucKvnkwKVuWVYAumZXGzRiqFkdtwqm9A4d+hsGVQdyV8mAa5RfeILhTApNMQvQEqr4UzeW7X3faBfQ3JP7m4eWlgH4JNQpaEz97FbnsuctNzluu1TpFb62fubr1Vgi2akM6dmuvwRS1HNRahiHmo+VLICZzpf7KL+RC7BkotgZiVYHPBZkPSQTf/9S9gE8DGgI3EZ0Oxu57DFMakkh+zi9u1N+Pde70EW/zeAby156Bas5AnBT3xJVxyxfmfGroVPTgPNVwI/7sDMt3JceYWClvoEtsssBkwerebW+6fQCLYcGTv4NhAzIlZgzd2JUV1vuFO3fk4qdklWGf0Jpx6k1DdJFRnLMzZ5xb59QZqMQNFTUUR01G1FBQ2EzVeCFfd+0NiKgqaUXLW2FQYtsWNf+8XMAxsMNgAfNYXU51PcOpNx1t/MsUNknEOZ5Zg9d4y9NAg1GhgiZN1w42PWIrqvItqj0WeZBQ1GUV+gMKno4l7XKLT11HpqRA0CWw8DNvkxtedAEsA6w/WF5/FY6o/EjV6B+cvCfia9ENHzrpESV+hpl1R024oboBbwB9vNQI1GoIaDEf1ElHsOFRrAopKRo/NDIBAYZNQ6TEoeDQMWxsQ4L8D/cD6IIvHa70x/aU7evif6NHXcZp3gGMnXfCkGeipNuipduiVN+8JeCkBPRaPHumPmgxGjYZR0kTsaPRiyj1c9dGo4lBUdggMX+UG1x0Hiwfrjax3QMCjbVGLv6EnX0Qt4+D4z26BD6aguFYo7nkU9xL8/rsbn7EAteyKnuiFWvRBTf1CElCjwTBuhUuUdhlVT0BhA1ClfjBqeUDAMbCeyHrhlAjwH8GTz6CWT6HnH0cvPAY/H3GJUpJQm8dQ2xao7dNo8Vy3yG+5qEtfFPcP9GxX9HQP1OIt9MpoyA6IHLcEeeJR5Fuoai+UuNTdu/oo2JvIeuLYWxRbP0zPPYJebIz+1hC1rQ9HA6/M7LGoUwP0j4dQp6ao5wuQc9nNXc2BGZ+gtxJQ5/4wZwXcuO3mLuWgZvGoXlcU0wXV6IImBgSsOoiCu5dMwGd9KLYEzPlrHdQ2Br0WjV6PgkMbXPA341EPD+oVi3o1QD0bo6Ft4FqWm/9Pdv4i6tAXNeuIGndED3ZEtTui6ctK0lq6B5XthhPcG5/1p9j/IfK9Wg2nY1XUuTJ6MxT2LnHB6yajAeEoIRIleFBCXTSgERrxPPouBbLOuaQSZJ5D82ejDh1Q61fQM6+g5m3Rw21Rg3ZoxjcudMkOnNDu+Mq+jTd4EF5LxLydyuF0K4N6l0L9QtD2GW7hE2vQqPLo3VCUGI4Sa6DRMWhkfTTsITTkETT4SdT/WdTzadTlGdSxFWr7PHopDrV6AT3xEmr6MuwN3Kvpy3HCu+ML7YuvzDCcoGTM2z0IvW1ooKGhhmbHuQKcYvRpfTS5NJpSAU2pgiZXR5Nqogm10dj66N1GaGgTNLAp6tMMvdkCvfEEeu0p9HJL9Nyz6O9d3Hr+kq0H4kR1xxfeH1+lUTilp2JOH0ODDI0wNMbQRIPLgS/arYtoQSz6NBjNKoM+rYRmhqGUCDS9JpoSgybURYkPoqGN0IDGqPfDqPOjqH0z1L87ZF9xa6UexWnYAV9sd5yogThVx6AKKZgSggs10tA4Q5MNfWRoSSPIy/i3cn7dgI6NR8eS0eFxaP97aO9YtDsJ7UhGWyehTe+jjdPQ+plo7edw4sC9/dnZOK91w/dwe5wG3XFiElBkEk6VTwtMw0NSS8inGEox9LmheUHo+1i4nnqvyH9rvxxCndvhtGqNr8WrOE264tRLQJ7x+CJmbTVnTHBySed+8i8MLTC01NBKQ6sN7WyMzk+ErHmQvRiuroSc1ZCzFq6ug+z1cHkDZK6Ds6vgl2VwdBlaPw2Nb4/eaILTrjnOi61wWrbBadYZPTQQ1R2PEzXzHWNoaDVnWvDNks795Mv83Rtab+hHQ1sNbTO0/T73xzYb2mhoTQhaUQYtKo++DEUfhaGJEWhkNBoQi3o0RK83xWnTEifuZZwnO6Gm/VDDsVnU//iBkr+jux+GdtCcIOkbQ6uC0IYAwQ5Duw3tDfi+wHOPoV0BMX7c+iC0MgQtKou+qIimVUHjqqN/eVCfejhdGuO89jjOX19Az3ZAzeOLaTyi9Z/+D31fVWjvLA/+TesCRXcGiPYbOmDoYMAPBdb+uF+MH7clMLEVwWhBWTSzEno/DI2KRANq4/RoiPP6ozhtWqHW7bK8j/d47k/kf1jeZ5ERzvflErUtZLt2liosIfETHjF0NODHAmt//A8R/mn4RfvvzJIQ9EU59GEoGhOOhtTE6V3vht54ZIvzPy3H0T6uyv2c/weABVuGb3f9XQAAAABJRU5ErkJggg==" InformativeScreenshot="9e866fb36adbe587288e0b8f77c40f26.jpg" Reference="LlypgTfZxUCoTGYmRunXUg/e6yqLzESNU2Kl-YN6ibNfw" Selector="&lt;html app='chrome.exe' title='Instagram' /&gt;" Url="https://www.instagram.com/monarkreal/" Version="V2">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
