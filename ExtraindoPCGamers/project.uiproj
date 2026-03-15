@@ -1,0 +1,6 @@
+{
+  "Name": "ExtraindoPCGamers",
+  "ProjectType": "Process",
+  "Description": "WebScraping de PCGamers ",
+  "MainFile": "Main.xaml"
+}
