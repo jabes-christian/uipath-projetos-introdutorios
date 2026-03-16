@@ -1,0 +1,6 @@
+{
+  "Name": "AbrindoAppDesktop",
+  "ProjectType": "Process",
+  "Description": "Abrindo Aplicativo Desktop Windows",
+  "MainFile": "Main.xaml"
+}
