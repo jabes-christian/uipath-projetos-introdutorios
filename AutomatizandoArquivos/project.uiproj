@@ -1,0 +1,6 @@
+{
+  "Name": "AutomatizandoArquivos",
+  "ProjectType": "Process",
+  "Description": "AutomatizandoArquivos Excel: Formatação, Ordenação e Filtros",
+  "MainFile": "Main.xaml"
+}
