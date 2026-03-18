@@ -1,0 +1,6 @@
+{
+  "Name": "ProcessInvoce",
+  "ProjectType": "Process",
+  "Description": "Coceito de In, Out, In/Out e Workflow Reutilizavel",
+  "MainFile": "Main.xaml"
+}
