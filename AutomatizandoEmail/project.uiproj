@@ -1,0 +1,6 @@
+{
+  "Name": "AutomatizandoEmail",
+  "ProjectType": "Process",
+  "Description": "Porcesso no UiPath automatizando Emails",
+  "MainFile": "Main.xaml"
+}
