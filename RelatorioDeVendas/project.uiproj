@@ -1,0 +1,6 @@
+{
+  "Name": "RelatorioDeVendas",
+  "ProjectType": "Process",
+  "Description": "Robô de Relatório Diário de Vendas em Excel - Estudos",
+  "MainFile": "Main.xaml"
+}
