@@ -1,0 +1,6 @@
+{
+  "Name": "TestandoActivities",
+  "ProjectType": "Process",
+  "Description": "Testando e estudando alguns Activities do UiPath",
+  "MainFile": "Main.xaml"
+}
