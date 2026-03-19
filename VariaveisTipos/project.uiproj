@@ -1,0 +1,6 @@
+{
+  "Name": "VariaveisTipos",
+  "ProjectType": "Process",
+  "Description": "Processo de estudos com variaveis e tipos no UiPath",
+  "MainFile": "Main.xaml"
+}
